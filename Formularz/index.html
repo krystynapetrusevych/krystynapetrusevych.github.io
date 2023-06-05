@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/f/meqwbgaa" method="post">
+        <label for="imię">Imię</label><br>
+        <input type="text" name="imię" id="imię" required><br>
+        <label for="nazwisko">Nazwisko</label><br>
+        <input type="text" name="nazwisko" id="nazwisko" required><br>
+        <label for="mail">Adress e-mail</label><br>
+        <input type="email" name="mail" id="mail" required>
+        <p>Wybierz swoje miasto</p>
+        <select name="miasto">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+        <p>Płeć</p>
+        <label><input type="radio" name="gender"> mężczyzna</label>
+        <label><input type="radio" name="gender">kobieta</label><br><br>
+        <label for="message">Wiadomość</label><br>
+        <textarea name="message" id="message" maxlength="150" placeholder="Napisz swoje życzenia"></textarea><br>
+        <label><input type="checkbox" name="agreement" required> Wyrażam zgodę na przetwarzanie moich
+            danych</label><br><br>
+        <input type="submit" value="Wysłać">
+    </form>
+</body>
+</html>
